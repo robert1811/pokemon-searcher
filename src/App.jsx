@@ -56,7 +56,12 @@ function App() {
             </ul>
             </div>
           </div>
-        : ''}
+        : <div className='card'>
+            <div className="card-header">
+              <div className="interrogation"><h1>?</h1></div>
+            </div>
+            <div className="card-body"></div>
+          </div>}
       </div>
     </div>
   )
