@@ -7,6 +7,7 @@ function App() {
   const [pokemon, setPokemon] = useState('')
 
   const search = e => {
+    document.getElementById('searcher').value = ''
     e.preventDefault()
     fetch(`https://pokeapi.co/api/v2/pokemon/${query}`)
       .then(res => res.json())
