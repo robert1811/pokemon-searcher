@@ -1,0 +1,99 @@
+*{
+  font-family: sans-serif;
+}
+
+body{
+  min-height: 80vh;
+}
+
+h1{
+  text-align: center;
+  color: #c0cc54;
+  text-shadow: rgb(38, 38, 156) 5px 0px 1px;
+  font-size: 50px;
+}
+
+form{
+  margin: 0 auto;
+  width: 350px;
+}
+
+input[type="text"]{
+  width: 100%;
+  padding: 5px;
+  background: none;
+  color: white;
+  border: none;
+  border-bottom: 2px solid #868686;
+  font-size: 25px;
+}
+
+input:focus{
+  outline: none;
+}
+
+input[type="submit"]{
+  display: none;
+}
+
+.card-body h2{
+  color: #ffff;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 0;
+}
+
+.card-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  position: relative;
+}
+
+.card-header img {
+  width: 150px;
+  height: 150px;
+  background-color: #868686;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -15px;
+}
+
+.card-body{
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.card{
+  margin: 0 auto;
+  width: 350px;
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  margin-top: 140px;
+}
+
+.card *{
+  color: white;
+}
+
+ul{ 
+  margin-top: 0;
+  padding: 0 2px;
+}
+
+ul *{
+  margin: 1px;
+}
+
+li{
+  list-style: none;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 68%;
+  margin: 0 auto;
+}
