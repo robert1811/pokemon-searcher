@@ -15,7 +15,7 @@ function App() {
       .catch(err => alert('That pokemon doesnt exist'))
   }
   const queryHandler = e => {
-    setQuery(e.target.value.trim().toLowerCase())
+    setQuery(e.target.value.trim().toLowerCase().replace(' ', '-'))
   }
 
   return (
@@ -33,7 +33,7 @@ function App() {
               
             </div>
             <div className="card-body">
-            <h2>(Nº {pokemon.id}) {capitalize(pokemon.name)}</h2>
+            <h2>(Nº {pokemon.id}) {capitalize(pokemon.name.replace('-', ' '))}</h2>
             <div className="row">
               <p><b>Height: </b>{pokemon.height / 10} m</p>
               <p><b>Weight: </b>{pokemon.weight / 10} kg</p>
